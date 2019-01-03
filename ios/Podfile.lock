@@ -2,6 +2,13 @@ PODS:
   - Amplitude-iOS (3.14.1)
   - Analytics (3.6.10)
   - AppAuth (0.95.0)
+  - AppCenter/Analytics (1.12.0):
+    - AppCenter/Core
+  - AppCenter/Core (1.12.0)
+  - AppCenter/Crashes (1.12.0):
+    - AppCenter/Core
+  - AppCenterReactNativeShared (1.11.0):
+    - AppCenter/Core (= 1.12.0)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -229,6 +236,9 @@ PODS:
   - yoga (0.57.1.React)
 
 DEPENDENCIES:
+  - AppCenter/Analytics (~> 1.12.0)
+  - AppCenter/Crashes (~> 1.12.0)
+  - AppCenterReactNativeShared (~> 1.11.0)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXAdsAdMob (from `../node_modules/expo-ads-admob/ios`)
   - EXBarCodeScanner (from `../node_modules/expo-barcode-scanner/ios`)
@@ -282,6 +292,8 @@ SPEC REPOS:
     - Amplitude-iOS
     - Analytics
     - AppAuth
+    - AppCenter
+    - AppCenterReactNativeShared
     - Bolts
     - boost-for-react-native
     - Branch
@@ -383,6 +395,8 @@ SPEC CHECKSUMS:
   Amplitude-iOS: 4a3c8807b2ea5369dc11e87e23825bff01e5a922
   Analytics: 63744ad4afa65c3bcdcdb7a94b62515bde5b3900
   AppAuth: 137f6bb6fc9dfbaf2cf9f6fcff1d336ff0163bc6
+  AppCenter: 4d27bdafd74b1b3e90946b9989fd6011a7e39c5e
+  AppCenterReactNativeShared: 74a1c684b8183b3edef0a7e41d567fe8bd31075d
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   Branch: 0d98d22745a9b68bcb4fa6dc1c6a92b64d4fdd7b
@@ -437,6 +451,6 @@ SPEC CHECKSUMS:
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: 390e075bd3ab07d85477f9416535f7231e83cf41
+PODFILE CHECKSUM: e829f5e1c3d2b46eb49dd706d36ea96bf7134b96
 
 COCOAPODS: 1.5.3

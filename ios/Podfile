@@ -2,6 +2,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 
 target 'flashcards' do
+  pod 'AppCenter/Crashes', '~> 1.12.0'
+  pod 'AppCenterReactNativeShared', '~> 1.11.0'
+  pod 'AppCenter/Analytics', '~> 1.12.0'
   pod 'ExpoKit',
     :git => "http://github.com/expo/expo.git",
     :tag => "ios/2.9.0",

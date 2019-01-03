@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		488718F1D6394B769EE4B9A9 /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48904A2D741F4DC19A2D8CF1 /* AppCenter-Config.plist */; };
 		7C57BECC0ADC4894ADE92B48 /* libAppCenterReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE417C1B3E18402596898B66 /* libAppCenterReactNative.a */; };
@@ -23,6 +22,7 @@
 		D7C682924E6B4D6FB1718D71 /* libAppCenterReactNativeCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2293BD83214DCCA301489C /* libAppCenterReactNativeCrashes.a */; };
 		E4E755EDF52249C184A9EF9E /* libAppCenterReactNativeAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7078FBFB954657AF97FCB0 /* libAppCenterReactNativeAnalytics.a */; };
 		EBB8117C1BFA0514F79CAF74 /* libPods-flashcards.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A88D15726AD99E8A257BC7 /* libPods-flashcards.a */; };
+		8B10DA9CC5DD4943AEF58FC9 /* libAppCenterReactNativePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7B5D42A9904F3E90CFA896 /* libAppCenterReactNativePush.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +50,8 @@
 		BE417C1B3E18402596898B66 /* libAppCenterReactNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = archive.ar; name = libAppCenterReactNative.a; path = libAppCenterReactNative.a; sourceTree = "<group>"; };
 		C4A88D15726AD99E8A257BC7 /* libPods-flashcards.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-flashcards.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2293BD83214DCCA301489C /* libAppCenterReactNativeCrashes.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = archive.ar; name = libAppCenterReactNativeCrashes.a; path = libAppCenterReactNativeCrashes.a; sourceTree = "<group>"; };
+		9756E831DD33443F951C6A24 /* AppCenterReactNativePush.xcodeproj */ = {isa = PBXFileReference; name = "AppCenterReactNativePush.xcodeproj"; path = "../node_modules/appcenter-push/ios/AppCenterReactNativePush.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		FC7B5D42A9904F3E90CFA896 /* libAppCenterReactNativePush.a */ = {isa = PBXFileReference; name = "libAppCenterReactNativePush.a"; path = "libAppCenterReactNativePush.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				7C57BECC0ADC4894ADE92B48 /* libAppCenterReactNative.a in Frameworks */,
 				E4E755EDF52249C184A9EF9E /* libAppCenterReactNativeAnalytics.a in Frameworks */,
 				D7C682924E6B4D6FB1718D71 /* libAppCenterReactNativeCrashes.a in Frameworks */,
+				8B10DA9CC5DD4943AEF58FC9 /* libAppCenterReactNativePush.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +141,7 @@
 				471ADFDC236F4ACF999F89C9 /* AppCenterReactNative.xcodeproj */,
 				58E33D04CD414E89B11AB390 /* AppCenterReactNativeAnalytics.xcodeproj */,
 				75C4747C4F894992A28A3613 /* AppCenterReactNativeCrashes.xcodeproj */,
+				9756E831DD33443F951C6A24 /* AppCenterReactNativePush.xcodeproj */,
 			);
 			name = Libraries;
 			path = "";
@@ -428,6 +432,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.guigacarvalho.flashcards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,6 +450,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",

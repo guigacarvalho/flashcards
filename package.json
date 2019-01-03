@@ -7,9 +7,14 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "appcenter": "^1.11.0",
+    "appcenter-analytics": "^1.11.0",
+    "appcenter-crashes": "^1.11.0",
     "expo": "^31.0.2",
     "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
+    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
+    "react-navigation": "^1.0.0-beta.15",
+    "styled-components": "^2.2.2"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"

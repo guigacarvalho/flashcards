@@ -1,21 +1,21 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { getDecks, addInitialDecks } from './utils/storage'
+import { setLocalNotification } from './utils/helpers'
+import { MainNavigator } from './utils/navigation'
 
-export default class App extends React.Component {
+export default class App extends Component {
+
+  componentDidMount(){
+    setLocalNotification()
+    addInitialDecks().done(
+      getDecks().done((t)=>{
+        this.setState(t);
+    }));
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <MainNavigator />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

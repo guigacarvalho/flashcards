@@ -7,9 +7,10 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "appcenter": "^1.11.0",
-    "appcenter-analytics": "^1.11.0",
-    "appcenter-crashes": "^1.11.0",
+    "appcenter": "1.11.0",
+    "appcenter-analytics": "1.11.0",
+    "appcenter-crashes": "1.11.0",
+    "appcenter-push": "1.11.0",
     "expo": "^31.0.2",
     "expokit": "31.0.2",
     "react": "16.5.0",

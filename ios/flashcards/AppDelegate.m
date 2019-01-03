@@ -3,6 +3,10 @@
 #import "AppDelegate.h"
 #import "ExpoKit.h"
 #import "EXViewController.h"
+#import <AppCenterReactNative/AppCenterReactNative.h>
+#import <AppCenterReactNativeAnalytics/AppCenterReactNativeAnalytics.h>
+#import <AppCenterReactNativeCrashes/AppCenterReactNativeCrashes.h>
+#import <AppCenterReactNativePush/AppCenterReactNativePush.h>
 
 @interface AppDelegate ()
 
@@ -21,7 +25,12 @@
     _window.rootViewController = _rootViewController;
 
     [_window makeKeyAndVisible];
-    
+
+    [AppCenterReactNative register];
+    [AppCenterReactNativeAnalytics registerWithInitiallyEnabled:true];  // Initialize AppCenter analytics
+    [AppCenterReactNativeCrashes registerWithAutomaticProcessing];  // Initialize AppCenter crashes
+    [AppCenterReactNativePush register];
+
     return YES;
 }
 
